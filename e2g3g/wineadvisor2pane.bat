@@ -1,0 +1,1 @@
+java -jar e2gRuleEngine.jar -w=800 -h=350 -sp=50 -bg="#990033" -tc="#ffff00" -sb "Recommend a Wine" -at "Wine Advisor" -st "An eXpertise2Go Example"  -kb http://expertise2go.com/e2g3g/e2g3gDoc/wineadvisor.kb

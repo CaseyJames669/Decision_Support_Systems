@@ -1,0 +1,188 @@
+REM for the purpose of this assignment, humans will NOT fall under mammals.
+REM I am aware this is incorrect.
+RULE [human]
+if [covering] = 'Human Flesh'
+then [class] = 'human'
+
+RULE [bird]
+if [covering] = 'feathers'
+then [class] = 'bird'
+
+RULE [mammal]
+if [covering] = 'hair' or
+[milk] = true
+then [class] = 'mammal'
+
+RULE [ungulate1]
+if [class] = 'mammal' and
+[hoof] = true
+then [order] = 'ungulate'
+
+RULE [ungulate2]
+if [class] = 'mammal' and
+[food] = 'cud'
+then [order] = 'ungulate'
+
+RULE [feline]
+if [class] = 'mammal' and
+[food] = 'meat'
+then [order] = 'feline'
+
+rule [house cat]
+if [order] = 'feline' and
+[size] = 'medium' 
+then [species] = 'house cat'
+
+RULE [tiger]
+if [order] = 'feline' and
+[color] = 'tan' and
+[color] = 'black' and
+[color] = 'white'
+then [species] = 'tiger'
+
+RULE [lion]
+if [order] = 'feline' and
+[color] = 'tan'
+then [species] = 'lion'
+
+RULE [panther]
+if [order] = 'feline' and
+[color] = 'black'
+then [species] = 'panther'
+
+RULE [child]
+if [class] = 'human' and
+[food] = 'baby food'
+then [order] = 'child'
+
+RULE [infant]
+if [order] = 'child' and
+[toys] = 'play nicely'
+then [species] = 'infant'
+
+RULE [monster]
+if [order] = 'child' and
+[toys] = 'destroy'
+then [species] = 'monster'
+
+RULE [brat]
+if [order] = 'child' and
+[toys] = 'not share'
+then [species] = 'brat'
+
+RULE [teen]
+if [class] = 'human' and
+[food] = 'junk'
+then [order] = 'teen'
+
+RULE [jock]
+if [order] = 'teen' and
+[hobby] = 'play sports'
+then [species] = 'jock'
+
+RULE [punk]
+if [order] = 'teen' and
+[hobby] = 'disregard authority'
+then [species] = 'punk'
+
+RULE [geek]
+if [order] = 'teen' and
+[hobby] = 'math'
+then [species] = 'geek'
+
+RULE [adult]
+if [class] = 'human' and
+[food] = 'real meals'
+then [order] = 'adult'
+
+RULE [peakedInHighschool]
+if [order] = 'adult' and
+[peaked] = true
+then [species] = 'peaked in high-school Rob Lowe'
+
+RULE [painfullyAwkward]
+if [order] = 'adult' and
+[go] = false
+then [species] = 'painfully awkward Rob Lowe'
+
+RULE [meathead]
+if [order] = 'adult' and
+[bro] = false
+then [species] = 'meathead Rob Lowe'
+
+rule [sizes]
+if [weight] < 3
+then [size] = 'small'
+
+rule [sizem]
+if [weight] < 30 and
+[weight] >= 3
+then [size] = 'medium'
+
+rule [sizel]
+if [weight] < 300 and
+[weight] >= 30
+then [size] = 'big'
+
+rule [sizexl]
+if [weight] >= 300
+then [size] = 'huge'
+
+PROMPT [covering] multchoice
+'what is the animal covered with?'
+'feathers'
+'hair'
+'Human Flesh'
+
+PROMPT [milk] yesno
+'Does the animal produce milk?'
+
+PROMPT [hoof] yesno
+'Does the animal have hooves?'
+
+PROMPT [food] multchoice
+'What does the animal eat?'
+'meat'
+'cud'
+'baby food'
+'junk'
+'real meals'
+
+PROMPT [color] allchoice
+'What color(s) is the animal?'
+'tan'
+'black'
+'white'
+'blue'
+'red'
+
+PROMPT [toys] multchoice
+'What does the animal do with toys?'
+'destroy'
+'play nicely'
+'not share'
+
+PROMPT [hobby]	multchoice
+'What does the animal do for a hobby'?
+'play sports'
+'disregard authority'
+'math'
+
+PROMPT [peaked] yesno
+'Is this animal still captain of the team?'
+
+PROMPT [go] yesno
+'Can this animal use the restroom with other people in the room?'
+
+PROMPT [bro] yesno
+'Can this animal stop saying bro?'
+
+PROMPT [weight] numeric
+'About how much does the animal weigh?'
+
+GOAL [species]
+GOAL [order]
+GOAL [class]
+
+MINCF 80
+maxvals [color] 3

@@ -1,0 +1,35 @@
+Casey Bladow
+CSIS 446 - LP Assignment
+2/12/15
+
+1. How many of each product should Dilbert pack in the container to achieve the greatest value?
+
+Dilbert should pack 106.164383561644 Dogberts, 50 Catberts, and 132.191780821918 Ratberts.
+
+2. What then is the value of the container's contents?
+The value of the container will be 4906.16438356164.
+
+3. What range of values could the Ratberts unit worth coefficient assume without affecting the quantity of Catberts, Dogberts, and Ratberts that Dilbert ships to Wally?
+Ratberts range of worth can vary between 13.8064516129032 and 35 without affecting the quantity of any other product.
+
+4. For a change of 1 in the container Volume, how much will the value of the objective function change?
+Changes from 4906.16438356164 to 4907.2602739726 when 3200 cubic feet is changed to 3201 cubic feet.
+
+5. What range of values could the available Time to Pack constraint assume and Dilbert remains limited by the same constraints as in the original problem?
+The Time to Pack variable can range from 956.6666666666 and 1638.
+
+6. Adjust the available Time to Pack in your model to be slightly greater than the maximum amount identified in the previous question.
+Which constraints now bind the solution?
+Slightly exceeding the limit will adjust to constraints to 1638 and 1671.16279069767.
+
+Restore your model to its original values (prior to step 6). Convert it to an integer model and answer the following questions:
+
+7. Now how many of each product should Dilbert ship?
+Dilbert should ship 106 Dogberts, 51 Catberts, and 131 Ratberts.
+
+8. What will now be the value of the container's contents?
+The value of the container will now be 4901.
+
+Print the source and objective result for each of the 3 problems (the original, step 6, integer).
+Print the sensitivity result (objective and duals) for the first 2 problems.
+Hand in your printed answers to the questions and indicate (label) on the printouts where you found the answers.

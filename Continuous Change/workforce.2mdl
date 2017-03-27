@@ -1,0 +1,139 @@
+{UTF-8}
+Inventory= INTEG (
+	Production-Sales,
+		300)
+	~	Widget
+	~		|
+
+Net Hire Rate=
+	(Target Workforce-Workforce)/Time to Adjust Workforce
+	~	Person/Month
+	~		|
+
+Production=
+	Workforce*Productivity
+	~	Widget/Month
+	~		|
+
+Productivity=
+	1
+	~	Widget/Month/Person
+	~		|
+
+Sales=
+	100+STEP(50, 20)
+	~	Widget/Month
+	~		|
+
+Target Production=
+	Sales
+	~	Widget/Month
+	~		|
+
+Target Workforce=
+	Target Production/Productivity
+	~	Person
+	~		|
+
+Time to Adjust Workforce=
+	3
+	~	Month
+	~		|
+
+Workforce= INTEG (
+	Net Hire Rate,
+		Target Workforce)
+	~	Person
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,Inventory,309,137,72,21,3,131,0,0,0,0,0,0
+10,2,Workforce,360,298,40,20,3,3,0,0,0,0,0,0
+12,3,48,610,130,10,8,0,3,0,0,-1,0,0,0
+1,5,7,3,4,0,0,22,0,0,0,-1--1--1,,1|(543,129)|
+1,6,7,1,100,0,0,22,0,0,0,-1--1--1,,1|(427,129)|
+11,7,0,480,129,6,8,34,3,0,0,1,0,0,0
+10,8,Sales,480,148,18,11,40,3,0,0,-1,0,0,0
+12,9,48,61,132,10,8,0,3,0,0,-1,0,0,0
+1,11,13,1,4,0,0,22,0,0,0,-1--1--1,,1|(193,131)|
+1,12,13,9,100,0,0,22,0,0,0,-1--1--1,,1|(104,131)|
+11,13,0,143,131,6,8,34,3,0,0,1,0,0,0
+10,14,Production,143,150,35,11,40,3,0,0,-1,0,0,0
+12,15,48,595,302,10,8,0,3,0,0,-1,0,0,0
+1,17,19,2,4,0,0,22,0,0,0,-1--1--1,,1|(443,302)|
+1,18,19,15,100,0,0,22,0,0,0,-1--1--1,,1|(541,302)|
+11,19,0,492,302,6,8,34,3,0,0,1,0,0,0
+10,20,Net Hire Rate,492,321,45,11,40,3,0,0,-1,0,0,0
+10,21,Productivity,277,211,38,11,8,3,0,0,0,0,0,0
+10,22,Target Production,645,211,57,11,8,3,0,0,0,0,0,0
+10,23,Target Workforce,582,416,57,11,8,3,0,0,0,0,0,0
+10,24,Time to Adjust Workforce,350,490,48,19,8,3,0,0,0,0,0,0
+1,25,2,13,1,0,0,0,0,64,0,-1--1--1,,1|(125,323)|
+1,26,21,13,1,0,0,0,0,64,0,-1--1--1,,1|(208,225)|
+1,27,8,22,1,0,0,0,0,64,0,-1--1--1,,1|(525,221)|
+1,28,22,23,1,0,0,0,0,64,0,-1--1--1,,1|(704,313)|
+1,29,21,23,1,0,0,0,0,64,0,-1--1--1,,1|(584,372)|
+1,30,23,19,1,0,0,0,0,64,0,-1--1--1,,1|(489,370)|
+1,31,24,19,1,0,0,0,0,64,0,-1--1--1,,1|(407,379)|
+1,32,23,2,1,0,0,0,0,64,1,-1--1--1,,1|(312,606)|
+1,33,2,19,1,0,0,0,0,64,0,-1--1--1,,1|(392,355)|
+///---\\\
+:L<%^E!@
+1:salesSTEP.vdf
+1:Current.vdf
+9:Current
+22:$,Dollar,Dollars,$s
+22:Hour,Hours
+22:Month,Months
+22:Person,People,Persons
+22:Unit,Units
+22:Week,Weeks
+22:Year,Years
+22:Day,Days
+23:0
+15:0,0,0,0,0,0
+19:100,0
+27:2,
+34:0,
+4:Time
+5:Sales
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+24:0
+25:100
+26:100

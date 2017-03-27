@@ -1,0 +1,49 @@
+    	                  Headache
+                  /             \  
+     Stress		                 Illness
+  /     /   \                 /      /      \
+Work School Relationships   Flu Migraine Concussion
+                                /    \
+                          W/Aura     WO/Auro
+
+15 questions for each 
+
+(possible question)
+Would you suggest your headache is from stress or are you feeling ill? Choice – either “Stressed” or “Ill”
+(another possibility, think I like this one more but if they select choices from each field it could make things trickier later – and it eliminated some really simple questions) 
+Select anything that applies to you – Extensive work hours, Extensive amounts of homework, Troubles at home, Dizzy, Nausaus, Sensitivty to light, Recent head trauma. – Each selection could be used later to ask more questions… i.e. they pick extensive work hours OR homework OR Troubles than you ask the stress related questions, same goes with the rest. However, if a selection is made from both, Homework and dizziness, we’ll have to weed out with more questions.
+
+Answering original question with “Stressed” -
+Work questions:
+If work is one the choices made above - 
+Please enter the number of hours you work? – Input, if more than 40 next question, if less ask first school question
+Are currently having any troubles with your coworkers?
+Have you been having troubles sleeping?
+
+School questions:
+If homework is chosen in the beginning –
+Are you a full or part-time student?
+How much time a week do you find yourself doing homework? – Input, similar to work hours, if greater than 20(?) this would be a factor
+Is it Finals week?!??
+
+Relationships questions:
+Have there been any incidents within the immediate family that would cause an extra amount of stress on you? (yes/no)
+How would you rate your personal love life? Choice – 1 to 5, 1 being bad, 5 being great.
+Do you feel your significant other helps or makes your current stress level worse?
+
+Answering original question with “Ill”
+Flu questions:
+Have you been feeling nauseous? (yes/no)
+Check your current temperature, what is it? input – if greater than 100 next question. If less, check for migraine/concussion symptoms…
+Are you currently experiencing a cough or sore throat?
+Are you experiencing chills?
+Have you been feeling fatigued?
+
+Dmitrii - Migraine questions:
+
+Dmitrii - Concussion questions:
+
+choice (single choice from options)
+multiple choice (enables more than one selection)
+yes no
+open ended - input

@@ -1,0 +1,101 @@
+{UTF-8}
+Addition=
+	200
+	~	
+	~		|
+
+Capacity=
+	200+STEP(Addition,30)
+	~	Mice
+	~		|
+
+Density Effect = WITH LOOKUP (
+	Mice/Capacity,
+		([(0,0)-(4,3)],(0,3),(1,1),(2,0.25),(3,0.1),(4,0) ))
+	~	Dmnl
+	~		|
+
+Mice= INTEG (
+	Net New Mice,
+		2)
+	~	Mice
+	~		|
+
+Net New Mice=
+	Density Effect*Mice*New Mice Rate
+	~	Mice/Month
+	~		|
+
+New Mice Rate=
+	0.25
+	~	1/Month
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 60
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.25
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,Mice,485,167,40,20,3,3,0,0,0,0,0,0
+10,2,New Mice Rate,268,351,51,11,8,3,0,0,0,0,0,0
+10,3,Net New Mice,480,475,48,11,8,3,0,0,0,0,0,0
+10,4,Capacity,801,159,29,11,8,3,0,0,0,0,0,0
+10,5,Density Effect,725,324,44,11,8,3,0,0,0,0,0,0
+1,6,1,3,1,0,0,0,0,64,0,-1--1--1,,1|(556,318)|
+1,7,3,1,1,0,0,0,0,64,0,-1--1--1,,1|(381,320)|
+1,8,2,3,1,0,0,0,0,64,0,-1--1--1,,1|(301,500)|
+1,9,1,5,1,0,0,0,0,64,0,-1--1--1,,1|(696,240)|
+1,10,4,5,1,0,0,0,0,64,0,-1--1--1,,1|(792,249)|
+1,11,5,3,1,0,0,0,0,64,0,-1--1--1,,1|(707,537)|
+10,13,Addition,748,47,28,11,8,3,0,0,0,0,0,0
+1,14,13,4,1,0,0,0,0,64,0,-1--1--1,,1|(821,82)|
+///---\\\
+:L<%^E!@
+1:Addition.vdf
+1:Original.vdf
+9:Addition
+31:0,ReferenceMode
+13:ReferenceMode
+23:0
+15:0,0,0,0,0,0
+19:100,0
+27:2,
+34:0,
+4:Time
+5:Density Effect
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+24:0
+25:60
+26:60
